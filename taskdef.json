@@ -1,0 +1,80 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:844268948863:task-definition/simplehttp:2",
+    "containerDefinitions": [
+        {
+            "name": "simplehttp-container",
+            "image": "844268948863.dkr.ecr.us-east-2.amazonaws.com/simplehttp:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 8000,
+                    "hostPort": 8000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [
+                {
+                    "name": "message",
+                    "value": "Hi from Emmanuel Ogah"
+                }
+            ],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "simplehttp-LogGroup",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "simplehttp-LogGroup-stream"
+                }
+            }
+        }
+    ],
+    "family": "simplehttp",
+    "taskRoleArn": "arn:aws:iam::844268948863:role/fargate-cluster-ECSTaskRole",
+    "executionRoleArn": "arn:aws:iam::844268948863:role/fargate-cluster-ECSTaskRole",
+    "networkMode": "awsvpc",
+    "revision": 2,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+        },
+        {
+            "name": "ecs.capability.execution-role-awslogs"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2023-08-30T18:44:21.775Z",
+    "registeredBy": "arn:aws:iam::844268948863:user/wolburg",
+    "tags": []
+}
