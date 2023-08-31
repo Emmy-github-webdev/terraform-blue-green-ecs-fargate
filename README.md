@@ -24,11 +24,11 @@ to
 
 - CodeDeploy started shifting traffic
 
-[CodePipeline started runing](./images/codedeploy-start.png)
+![CodePipeline started runing](./images/codedeploy-start.png)
 
 - CodePipeline completed
-[CodePipeline completed](./images/codepipeline2.png)
+![CodePipeline completed](./images/codepipeline2.png)
 
 - Traffic successfully shifted to Blue target group
 
-[CodePipeline started runing](./images/codedeploy-complete.png)
+![CodePipeline started runing](./images/codedeploy-complete.png)
