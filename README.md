@@ -20,7 +20,7 @@ to
 `
 - Start Codepipeline by pushin updated code to codecommit
 
-[CodePipeline started runing](images/codepipeline1.png)
+![CodePipeline started runing](./images/codepipeline1.png)
 
 - CodeDeploy started shifting traffic
 
