@@ -18,7 +18,7 @@ to
 
 “image”: <IMAGE1_NAME>
 `
-[CodePipeline started runing](./images/codepipeline1.png)
+[CodePipeline started runing](/images/codepipeline1.png)
 
 - CodeDeploy started shifting traffic
 
