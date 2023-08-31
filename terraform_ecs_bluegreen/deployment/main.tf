@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "codepipeline_bucket" {
-  bucket = join("-", [lower(var.env_name), "bucket19"])
+  bucket = join("-", [lower(var.env_name), "bucket191"])
   acl    = "private"
 }
 
